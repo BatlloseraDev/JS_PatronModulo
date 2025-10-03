@@ -2,7 +2,7 @@ import { agregarTarea, obtenerTareas} from "./TaskManager.js";
 
 
 
-function  mostrarTareas () {
+const mostrarTareas = () => {
     const tareas = obtenerTareas();
 
     tareas.forEach(tarea => {
