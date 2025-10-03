@@ -19,3 +19,11 @@ export function completarTarea(id) {
     else console.log("Tarea no encontrada");
 
 }
+
+
+export function eliminarTarea(id) {
+    const index = tareas.findIndex(tarea => tarea.id === id);
+    if (index !== -1) tareas.splice(index, 1);
+    else console.log("Tarea no encontrada");
+   
+}

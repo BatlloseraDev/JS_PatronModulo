@@ -1,5 +1,14 @@
-import { agregarTarea, obtenerTareas, completarTarea } from "./TaskManager.js";
+import { agregarTarea, obtenerTareas, completarTarea, eliminarTarea} from "./TaskManager.js";
 
+
+const crearTarea = () => {
+    const tarea = {
+        id: 5,
+        descripcion: "Tarea nueva",
+        completada: false
+    }
+    agregarTarea(tarea);
+}
 
 
 const mostrarTareas = () => {
@@ -16,8 +25,22 @@ const marcarCompletada = (id) => {
 }
 
 
-//mostrarTareas();
+const destruirTarea = (id) => {
+    eliminarTarea(id);
+}
 
-// marcarCompletada(5);
 
-// mostrarTareas();
+mostrarTareas();
+
+crearTarea();
+
+
+mostrarTareas();
+
+marcarCompletada(5);
+
+mostrarTareas();
+
+destruirTarea(5);
+
+mostrarTareas();
