@@ -8,3 +8,8 @@ const tareas = [
 export function agregarTarea(tarea) {
     tareas.push(tarea);
 }
+
+
+export function obtenerTareas() {
+    return tareas;
+}
