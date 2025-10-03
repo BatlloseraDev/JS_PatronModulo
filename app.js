@@ -1,4 +1,4 @@
-import { agregarTarea, obtenerTareas} from "./TaskManager.js";
+import { agregarTarea, obtenerTareas, completarTarea } from "./TaskManager.js";
 
 
 
@@ -10,6 +10,14 @@ const mostrarTareas = () => {
     });
 }
 
+
+const marcarCompletada = (id) => {
+    completarTarea(id);
+}
+
+
 //mostrarTareas();
 
+// marcarCompletada(5);
 
+// mostrarTareas();

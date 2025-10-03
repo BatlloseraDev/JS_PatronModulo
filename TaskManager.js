@@ -13,3 +13,9 @@ export function agregarTarea(tarea) {
 export function obtenerTareas() {
     return tareas;
 }
+export function completarTarea(id) {
+    const index = tareas.findIndex(tarea => tarea.id === id);    
+    if(index !== -1)tareas[index].completada  = true;
+    else console.log("Tarea no encontrada");
+
+}
