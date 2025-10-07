@@ -38,10 +38,6 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
-
-Distribuido bajo la Licencia MIT. Ve `LICENSE` para más información.
-
 ## 👨‍💻 Autor
 
 Victor Albert - [@Batlloseradev](https://github.com/BatlloseraDev)
